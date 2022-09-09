@@ -1,0 +1,12 @@
+Here is the rule: represent each letter A-Z as 1-26 and then shift the corresponding letter by the number to the right (wrapping around).
+
+For example, 
+- A -> B 
+- B -> D 
+- C -> F
+etc...
+Encrypt the message 
+
+"This is quiz 1. I hope I passed."
+
+// Comment: why is this not a good encryption scheme?
