@@ -1,0 +1,43 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Quiz 4}
+
+\maketitle
+
+\begin{enumerate}
+	\item Can you solve $2^x = 5 \mod 7$? If so, do it. If not, why?
+	\item Is the following true or false: $\ln x = \mathcal O(\sqrt{x})$.
+	\item Let's say the message space, ciphertext space, and the key space is $\mathbb{F}_{11}$ 
+		and you know that messages are being encrypted by 
+		\begin{displaymath}
+			e_k(m) = km \mod 11
+		\end{displaymath}
+		Suppose you discover that for $m=2$ that $e_k(m) = 4$. What is $k$? 
+\end{enumerate}
+\end{document}
