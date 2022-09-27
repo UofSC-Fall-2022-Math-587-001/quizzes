@@ -1,0 +1,41 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Quiz 5}
+
+\maketitle
+
+Let $p = 11$ and $g = 2$. Alice has supplied her public key as $A = 10$ and 
+Bob wants to use the Elgamal PKC to send the message $m = 8$ to 
+Alice. He choses $k = 3$ at random. What does he send to Alice?
+
+Suppose a hacker came and told you they stole Alice's private key from 
+her machine. They claim $a = 4$ is Alice's secret key. Do you believe them?
+
+Can you recover $a$ (by hand) in the alloted time? 
+\end{document}
