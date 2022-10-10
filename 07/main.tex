@@ -1,0 +1,38 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Quiz}
+
+\maketitle
+
+Alice wants to try out RSA with Bob. She choses $N = 10 = 2 \cdot 5$. Should 
+she choose $e = 4$? If not explain why. 
+
+Bob uses $N$ and either $e=4$ or a better choice of $e$ to send the ciphertext 
+$c = 7$. What is the secret message?
+\end{document}
