@@ -1,0 +1,47 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Quiz}
+
+\maketitle
+
+You know how to factor $21$ but lets carry out the steps of the 
+quadratic sieve for it. 
+\begin{itemize}
+	\item \textbf{Step 1}. Find three integers $a_1, a_2, a_3$ such that 
+	$c_i = a_i^2 \mod 21$ are $5$-smooth. (You should only need to test 5 integers.)
+
+	\item \textbf{Step 2}. Take the square root of the product $c_ic_j$ for 
+		appropriate $i,j$ to get $B$. Let $A := a_ia_j$ be the
+		corresponding product of $a_l$.  
+
+	\item \textbf{Step 3}. Compute the $\operatorname{gcd}(A-B,21)$ 
+	for $A$ and $B$ found in Steps 1 and 2. Did you factor $21$? 
+\end{itemize}
+	
+\end{document}
